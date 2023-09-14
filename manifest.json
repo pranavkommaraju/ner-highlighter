@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "NER Highlighter",
+    "description": "Highlight named entities on webpages",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "action": {
+        "default_title": "NER Highlighter",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js" : ["highlight.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}

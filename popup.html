@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NER Highlighter</title>
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      max-width: 300px;
+      padding: 20px;
+      background-color: #9fd3c7;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    button {
+      display: block;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1>NER Highlighter</h1>
+  <p>Click the buttons below to select entities</p>
+  <button id="perButton">Persons Highlighted</button>
+  <button id="locButton">Locations Highlighted</button>
+  <button id="orgButton">Organizations Highlighted</button>
+  <button id="miscButton">Miscellaneous Highlighted</button>
+  <script src="popup.js"></script>
+</body>
+</html>
